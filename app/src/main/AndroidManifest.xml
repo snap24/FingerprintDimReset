@@ -11,7 +11,7 @@
             android:value="true" />
         <meta-data
             android:name="xposeddescription"
-            android:value="Fingerprint Dim Reset by zygisk-enc (GitHub). Keeps fingerprint active during screen dimming to reset timeout." />
+            android:value="A lightweight Xposed module that prevents your screen from timing out by resetting it using fingerprint sensor." />
         <meta-data
             android:name="xposedminversion"
             android:value="82" />

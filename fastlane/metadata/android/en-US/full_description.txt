@@ -1,4 +1,4 @@
-FingerprintDimReset is a specialized Xposed module designed to improve your device's usability by preventing unexpected screen timeouts.
+FingerprintDimReset is a lightweight Xposed module designed to improve your device's usability by preventing unexpected screen timeouts.
 
 The module works by monitoring the system's power state. When it detects that the screen has entered the 'dim' phase (just before turning off), it activates a background listener for the fingerprint sensor. If you place your finger on the sensor during this time, the module tells the system to treat it as 'user activity', which immediately restores full brightness and resets the countdown timer.
 

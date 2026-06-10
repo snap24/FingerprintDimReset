@@ -1,6 +1,6 @@
 # FingerprintDimReset
 
-A lightweight Xposed module that prevents your screen from timing out while your finger is on the fingerprint sensor.
+A lightweight Xposed module that prevents your screen from timing out by resetting it using fingerprint sensor.
 
 ## How it works
 
