@@ -1,10 +1,11 @@
-FingerprintDimReset is a lightweight Xposed module designed to improve your device's usability by preventing unexpected screen timeouts.
+A lightweight Xposed module that prevents your screen from timing out by resetting it using the fingerprint sensor.
 
-The module works by monitoring the system's power state. When it detects that the screen has entered the 'dim' phase (just before turning off), it activates a background listener for the fingerprint sensor. If you place your finger on the sensor during this time, the module tells the system to treat it as 'user activity', which immediately restores full brightness and resets the countdown timer.
+When Android dims the screen (before turning it off), this module monitors for any fingerprint activity. If a finger is detected on the sensor during the dimming phase, the module automatically sends a "User Activity" signal to the system, resetting the screen timeout and bringing the brightness back to normal.
 
-Perfect for reading, browsing, or any activity where you might not be interacting with the screen frequently but want it to stay on.
+This is particularly useful for users who read long articles or watch content where the screen might dim unexpectedly.
 
 Features:
-- Privacy-first: No internet permission, no data collection.
-- Optimized: Only hooks the necessary system services.
-- Compatible: Works on most AOSP-based ROMs with fingerprint support.
+* Seamless Integration: Works with the native Android power management system.
+* Privacy Focused: Works entirely offline. No internet permissions, no tracking.
+* Performance: Minimal footprint, only active during the dimming phase.
+* Xposed/LSPosed Compatible: Fully compatible with modern Xposed frameworks.

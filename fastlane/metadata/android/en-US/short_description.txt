@@ -1,1 +1,1 @@
-A lightweight Xposed module that prevents your screen from timing out by resetting it using fingerprint sensor.
+Xposed module to reset screen dimming via fingerprint
