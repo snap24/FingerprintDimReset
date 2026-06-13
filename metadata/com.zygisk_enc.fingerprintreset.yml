@@ -1,14 +1,14 @@
 Categories:
   - System
 License: Apache-2.0
-WebSite: https://github.com/zygisk-enc/FingerprintDimReset
-SourceCode: https://github.com/zygisk-enc/FingerprintDimReset
-IssueTracker: https://github.com/zygisk-enc/FingerprintDimReset/issues
+WebSite: https://github.com/snap24/FingerprintDimReset
+SourceCode: https://github.com/snap24/FingerprintDimReset
+IssueTracker: https://github.com/snap24/FingerprintDimReset/issues
 
 AutoName: Fingerprint Dim Reset
 
 RepoType: git
-Repo: https://github.com/zygisk-enc/FingerprintDimReset.git
+Repo: https://github.com/snap24/FingerprintDimReset.git
 
 Builds:
   - versionName: 1.0.0

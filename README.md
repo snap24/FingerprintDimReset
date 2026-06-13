@@ -1,35 +1,46 @@
-# FingerprintDimReset
+<div align="center">
+  <h1>FingerprintDimReset</h1>
+  <p>Lightweight Xposed module to prevent screen timeout via fingerprint sensor</p>
+  <img src="metadata/images/icon.png" width="128" height="128" />
+  <br><br>
+  
+  [![Version](https://img.shields.io/badge/Version-v1.0.0-9575CD?style=flat-square)](https://github.com/snap24/FingerprintDimReset/releases)
+  [![License](https://img.shields.io/badge/License-Apache_2.0-blue?style=flat-square)](LICENSE)
+  [![Platform](https://img.shields.io/badge/Platform-Xposed/LSPosed-brightgreen?style=flat-square)](https://github.com/snap24/FingerprintDimReset)
+</div>
 
-A lightweight Xposed module that prevents your screen from timing out by resetting it using fingerprint sensor.
+---
 
-## How it works
+FingerprintDimReset is a specialized Xposed module that enhances Android's power management. It monitors the system's "Dimming" state and allows you to reset the screen timeout by simply touching your fingerprint sensor, eliminating the need to interact with the display or physical power buttons.
 
-When Android dims the screen (before turning it off), this module monitors for any fingerprint activity. If a finger is detected on the sensor during the dimming phase, the module automatically sends a "User Activity" signal to the system, resetting the screen timeout and bringing the brightness back to normal.
+## How it Works
 
-This is particularly useful for users who read long articles or watch content where the screen might dim unexpectedly.
+When the system enters the dimming phase (the final few seconds before the screen turns off), the module activates a low-level hook. If a fingerprint event is detected, it injects a "User Activity" signal, restoring full brightness and resetting the countdown timer.
 
 ## Features
 
-- **Seamless Integration:** Works with the native Android power management system.
-- **Privacy Focused:** Works entirely offline. No internet permissions, no tracking.
-- **Performance:** Minimal footprint, only active during the dimming phase.
-- **Xposed/LSPosed Compatible:** Fully compatible with modern Xposed frameworks.
+- **System Integration:** Deep integration with `DisplayPowerController` for native behavior.
+- **Hardware Efficiency:** Minimal CPU overhead; only active during the screen dimming phase.
+- **Privacy Oriented:** No internet permissions, no data collection, and 100% offline.
+- **Compatibility:** Optimized for modern Android versions (10+) and LSPosed.
 
-## F-Droid Checklist
+## Technical Configuration
 
-- [x] **Fully Open Source:** Licensed under Apache 2.0.
-- [x] **Privacy:** No internet permission, no tracking, no non-free dependencies.
-- [x] **Standard Build System:** Uses standard Gradle build.
-- [x] **Binary Clean:** No pre-compiled libraries included.
+- **Minimum SDK:** 29 (Android 10).
+- **Framework:** Xposed API 82+.
+- **Build System:** Gradle (Standard Android).
 
-## Build Instructions
+## Build Requirements
 
-1. Clone the repository.
-2. Open in Android Studio.
-3. Ensure you have the Xposed API available (linked via `compileOnly`).
-4. Run `./gradlew assembleDebug` to build the debug APK.
-5. Run `./gradlew assembleRelease` to build the production APK.
+1. **Clone:** `git clone https://github.com/snap24/FingerprintDimReset.git`
+2. **Environment:** Android Studio Koala+, JDK 17.
+3. **Dependencies:** Xposed API must be available during compilation (provided via `compileOnly`).
 
 ## License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+Distributed under the Apache License 2.0. See `LICENSE` for further information.
+
+---
+<div align="center">
+  Maintained by snap24
+</div>
