@@ -9,7 +9,7 @@
   [![Platform](https://img.shields.io/badge/Platform-Xposed/LSPosed-brightgreen?style=flat-square)](https://github.com/snap24/FingerprintDimReset)
   
   <br><br>
-  <img src="metadata/images/demo.gif" alt="Demo" width="300"/>
+  <img src="metadata/images/demo.gif" alt="Demo" />
 </div>
 
 ---
