@@ -7,6 +7,9 @@
   [![Version](https://img.shields.io/badge/Version-v1.0.0-9575CD?style=flat-square)](https://github.com/snap24/FingerprintDimReset/releases)
   [![License](https://img.shields.io/badge/License-Apache_2.0-blue?style=flat-square)](LICENSE)
   [![Platform](https://img.shields.io/badge/Platform-Xposed/LSPosed-brightgreen?style=flat-square)](https://github.com/snap24/FingerprintDimReset)
+  
+  <br><br>
+  <img src="metadata/images/demo.gif" alt="Demo" width="300"/>
 </div>
 
 ---
