@@ -16,6 +16,10 @@
 
 ---
 
+**English** | [简体中文](README.zh-CN.md)
+
+---
+
 FingerprintDimReset is a specialized Xposed module that enhances Android's power management. It monitors the system's "Dimming" state and allows you to reset the screen timeout by simply touching your fingerprint sensor, eliminating the need to interact with the display or physical power buttons.
 
 > Inspired by the Transsion OEM skin (XOS), which is the only Android OEM to natively include this feature. This module brings the same functionality to all Android devices via Xposed/LSPosed.
@@ -29,7 +33,7 @@ When the system enters the dimming phase (the final few seconds before the scree
 - **System-Level Integration:** Deep hook into `DisplayPowerController` for native, seamless behavior.
 - **Hardware Efficiency:** Minimal CPU overhead — fingerprint listener only activates during the dim phase and auto-cancels after 3 seconds.
 - **Zero UI:** No launcher icon, no settings screen. Enable it in LSPosed and forget about it.
-- **Privacy First:** No internet permissions, no data collection, no background services, 100% offline.
+- **Privacy First:** No internet permissions, no data collection, no background services.
 - **Wide Compatibility:** Works across AOSP, Samsung OneUI, Xiaomi HyperOS, and other OEMs via multi-strategy field reflection.
 
 ## Installation
